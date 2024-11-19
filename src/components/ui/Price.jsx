@@ -11,7 +11,7 @@ function Price({ salePrice, originalPrice }) {
             ${salePrice}
           </>
         ) : (
-          <>${originalPrice.toFixed(2)}</>
+          <>${originalPrice}</>
         )}
       </div>
   )
