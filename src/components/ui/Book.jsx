@@ -13,7 +13,9 @@ function Book({ book }) {
     image.src = book.url;
     image.onload = () => {
       setTimeout(() => {
+        if (mountedRef.current) {
           setImg(image);
+        }
       }, 300);
     };
     return () => {
