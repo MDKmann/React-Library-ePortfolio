@@ -9,7 +9,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  max-width: 100vw;
+  max-width: 100dvw;
   overflow-x: hidden;
   background-color: #f7f5ed;
   /* background-color: rgb(251, 242, 226); */
@@ -60,7 +60,7 @@ li {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: clamp(2rem, 5vh, 4rem);
   color: #7daef6;
   margin-bottom: 24px;
   text-align: center;
@@ -253,8 +253,8 @@ LANDING
 }
 
 header {
-  height: calc(100vh - 80px);
-  padding: 4rem 0;;
+  height: calc(100dvh - 10rem);
+  padding: 4rem 0;
 }
 
 .header__container {
@@ -272,6 +272,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-wrap: balance;
+  max-height: 40dvh;
 }
 
 .header__span {
@@ -287,7 +289,7 @@ color: rgb(49, 59, 86)
   
   /* Added this after the tutorial to 
   make landing page responsive on laptops */
-  max-height: 50vh;
+  max-height: 40dvh;
 
 }
 
