@@ -851,9 +851,7 @@ select {
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
-  .header__description{
-    margin-top: 6rem;
-  }
+
   .header__img--wrapper {
    display: flex;
    justify-content: center;
