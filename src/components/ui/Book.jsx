@@ -29,7 +29,7 @@ function Book({ book }) {
       {img ? (
         <>
           <Link to={`/books/${book.id}`}>
-            <figure className="book__img--wrapper">
+            <figure className="book__img--wrapper ">
               <img src={img.src} alt="" className="book__img" />
             </figure>
           </Link>

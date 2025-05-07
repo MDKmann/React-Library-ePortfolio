@@ -8,9 +8,12 @@ function Footer() {
       <div className="container">
         <div className="row row__column">
           <Link to="/">
-            <figure className="footer__logo">
+            {/* <figure className="footer__logo">
               <img src={Logo} alt="" className="footer__logo--img" />
-            </figure>
+            </figure> */}
+            <h2 className="purple nav__logo">
+              SMART<span className="footer__logo--span">BOOKS</span>
+            </h2>
           </Link>
           <div className="footer__list">
             <Link to="/" className="footer__link">

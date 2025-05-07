@@ -8,7 +8,10 @@ function Highlights() {
       <div className="container">
         <div className="row">
           <h2 className="section__title">
-            Why choose <span className="purple">Library</span>
+            Why choose{" "}
+            <span className="purple">
+              SMART<span className="header__span">BOOKS</span>
+            </span>
           </h2>
           <div className="highlight__wrapper">
             <Highlight
