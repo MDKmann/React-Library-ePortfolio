@@ -254,6 +254,7 @@ LANDING
 
 header {
   height: calc(100vh - 80px);
+  padding: 4rem 0;;
 }
 
 .header__container {
@@ -271,7 +272,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .header__span {
