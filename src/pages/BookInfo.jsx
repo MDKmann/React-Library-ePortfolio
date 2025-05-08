@@ -22,7 +22,7 @@ function BookInfo({ books, addToCart, cart }) {
   return (
     <div id="books__body">
       <main id="books__main">
-        <div className="books__container">
+        <div className="books__container books__container--flex">
           <div className="row">
             <div className="book__selected--top">
               <Link to="/books" className="book__link">
@@ -33,17 +33,19 @@ function BookInfo({ books, addToCart, cart }) {
               </Link>
             </div>
             <div className="book__selected">
-              <figure className="book__selected--figure">
-                <img src={book.url} alt="" className="book__selected--img" />
-              </figure>
               <div className="book__selected--description">
-                <h2 className="book__selected--title">{book.title}</h2>
-                <Rating rating={book.rating} />
-                <div className="book__selected--price">
-                  <Price
-                    salePrice={book.salePrice}
-                    originalPrice={book.originalPrice}
-                  />
+                <figure className="book__selected--figure">
+                  <img src={book.url} alt="" className="book__selected--img" />
+                </figure>
+                <div className="book__selected--info">
+                  <h2 className="book__selected--title">{book.title}</h2>
+                  <Rating rating={book.rating} />
+                  <div className="book__selected--price">
+                    <Price
+                      salePrice={book.salePrice}
+                      originalPrice={book.originalPrice}
+                    />
+                  </div>
                 </div>
               </div>
               <div className="book__summary">
